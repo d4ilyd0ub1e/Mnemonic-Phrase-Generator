@@ -1,0 +1,46 @@
+#Author: Tristan J. Flynn
+#Date: 4/30/22
+#Description: Pseudocode describing the function of a software mnemonics generator
+
+Declare function main()
+
+declare int: numWords, i
+declare str list: firstLetters
+
+display("How many words are required for your mnemonic phrase?(1-20)")
+  input(numWords)
+
+i = 0
+while numWords < 0 or numWords > 20 or numWords is not a string
+  display("Choose a number greater than zero and less than 20")
+  display("How many words are required for your mnemonic phrase? (1-20)")
+  input(numWords)
+end while
+while numWords > 0
+  display("Enter the first letter of the word in position", i + 1)
+  input (firstLetters[i])
+  numWords -= 1
+  i += 1
+end while
+
+
+Declare function phraseGenerator(numWords, dictFile, firstLetters)
+
+declare str list: mnemonicPhrase
+
+try:
+  dictFile = dictionary.txt, read
+
+  for item in firstLetters[]
+  read from dictFile
+    if record in dictFile starts with firstLetters[i]
+    mnemonicPhrase[i] = record
+    i += 1
+
+#Create object
+thePhrase = MnemonicPhrase.phrase()
+
+#Obejct methods to shuffle phrase and display final phrase
+
+thePhrase.displayPhrase()
+thePhrase.shufflePhrase()

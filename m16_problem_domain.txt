@@ -1,0 +1,11 @@
+#Author: Tristan J. Flynn
+
+#Date: 5/15/22
+
+#Description: Describes the problem solved by the programmer in M16
+
+Problem Domain - Mnemonic Phrase Generation
+
+Mnemonic phrases are often used in an academic setting to recall information that is otherwise difficult to retain. For example Please Excuse My Dear Aunt Sally
+for the order of operations. The programmer will create a solution that will allow a user to enter the number of words in their phrase and the first letter of
+each word to create mnemonics.
